@@ -1,0 +1,230 @@
+{
+  "vtex.menu@2.x:menu#row-01": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#quienessomos",
+      "menu-item#nuestrastiendas",
+      "menu-item#contacto"
+    ]
+  },
+  "menu-item#quienessomos": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": false,
+        "tagTitle": "Quienes Somos",
+        "text": "Quienes Somos"
+      }
+    }
+  },
+  "menu-item#nuestrastiendas": {
+    "props": {
+      "id": "menu-item-black-friday",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Nuestras tiendas",
+        "text": "Nuestras tiendas"
+      }
+    }
+  },
+  "menu-item#contacto": {
+    "props": {
+      "id": "menu-item-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "mailto:hola@mastampa.cl",
+        "noFollow": false,
+        "tagTitle": "Contacto",
+        "text": "Contacto"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#row-02": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#terminos",
+      "menu-item#mediosdepago",
+      "menu-item#devoluciones"
+    ]
+  },
+
+  "menu-item#terminos": {
+    "props": {
+      "id": "menu-item-smartphones",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/terms",
+        "noFollow": true,
+        "tagTitle": "Términos y condiciones",
+        "text": "Términos y condiciones"
+      }
+    }
+  },
+
+  "menu-item#mediosdepago": {
+    "props": {
+      "id": "menu-item-videogames",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Medios de pago",
+        "text": "Medios de pago"
+      }
+    }
+  },
+
+  "menu-item#devoluciones": {
+    "props": {
+      "id": "menu-item-tvs",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Devoluciones",
+        "text": "Devoluciones"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#row-03": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#mivendedora",
+      "menu-item#mispedidos",
+      "login#personal-click"
+    ]
+  },
+
+  "menu-item#mivendedora": {
+    "props": {
+      "id": "menu-item-bags",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/d",
+        "noFollow": true,
+        "tagTitle": "Mi vendedora",
+        "text": "Mi vendedora"
+      }
+    }
+  },
+
+  "menu-item#mispedidos": {
+    "props": {
+      "id": "menu-item-backpacks",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Mis pedidos",
+        "text": "Mis pedidos"
+      }
+    }
+  },
+
+  "login#personal-click": {
+    "props": {
+      "optionsTitle": "Iniciar Sesión",
+      "iconLabel": "PERSONAL CLICK",
+      "blockClass": "personal-click-button",
+      "mirrorTooltipToRight": true
+    }
+  },
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#quienessomos-mobile",
+      "menu-item#terminos-mobile",
+      "menu-item#contacto-mobile",
+      "menu-item#faq-mobile"
+    ]
+  },
+
+  "menu-item#quienessomos-mobile": {
+    "props": {
+      "id": "menu-item-quienessomos-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "QUIÉNES SOMOS",
+        "text": "Quiénes Somos"
+      }
+    }
+  },
+
+  "menu-item#terminos-mobile": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "/terms",
+        "noFollow": true,
+        "tagTitle": "TÉRMINOS",
+        "text": "Términos"
+      }
+    }
+  },
+
+  "menu-item#contacto-mobile": {
+    "props": {
+      "itemProps": {
+        "type": "external",
+        "href": "mailto:hola@mastampa.cl",
+        "noFollow": true,
+        "tagTitle": "CONTACTO",
+        "text": "Contacto"
+      }
+    }
+  },
+
+  "menu-item#faq-mobile": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "PREGUNTAS FRECUENTES",
+        "text": "FAQ"
+      }
+    }
+  }
+}

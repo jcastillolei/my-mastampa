@@ -1,0 +1,47 @@
+{
+  "store.custom#about-us": {
+    "blocks": [
+      "flex-layout.row#about-us",
+      "newsletter"
+    ]
+  },
+
+  "flex-layout.row#about-us": {
+    "children": [
+      "image#mobile-phone",
+      "flex-layout.col#text-about-us"
+    ]
+  },
+
+  "flex-layout.col#text-about-us": {
+    "children": ["rich-text#about-us"],
+    "props": {
+      "blockclass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-about-us": {
+    "props": {
+      "text":
+      "",
+      "blockClass": "title"
+    }
+  },
+
+  "image#mobile-phone": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "storePrint"
+    }
+  },
+  "rich-text#about-us": {
+    "props": {
+      "marginTop": 8,
+      "text": "**ENCUENTRA TODO EN MASTAMPA.CL**\n\n¿Quieres descubrir lo último en moda, vestuario femenino, accesorios y tendencias? Encuentra todo y mucho más en Mastampa.cl \n\nMastampa es un espacio único, donde encontrarás todo lo que buscas en vestuario, calzado, fiesta y accesorios de tus marcas favoritas como: Anne Klein, Bagoraz, Club 408, Kalisson, Ma Griffe, Punt Roma, Punto Ingles, R&M Richards, Sandra Solari, entre muchas más. \n\n En nuestras distintas categorías encontrarás desde blusas, poleras, vestidos, chaquetones, chaquetas, pantalones, blazers, vestidos, zapatos, parcas, accesorios de moda entre muchas cosas más. \n\nEn Mastampa conocemos las tendencias y lo que más te gusta ya que llevamos más de cuarenta años acompañándote. Comenzando en Viña del Mar, Valparaíso, Santiago y ahora con Mastampa.cl. Donde como familia logramos entregar el mejor producto, ese que tanto buscas y logras encontrar con nosotros. Encuentra tu tenida favorita para todo tipo de eventos, desde un día en la oficina, una comida en casa, una tarde de deporte, un día de playa, hasta un elegante matrimonio.\n\n **¿Cómo comprar por internet?** \n\nCompra segura en Mastampa y evita realizar transacciones desde una red wifi pública, asegúrate de que la url de esta web sea una web segura (https). En Mastampa.cl contamos con todos los resguardos para que puedas realizar transacciones de manera segura.",
+      "blockClass": "about"
+    }
+  }
+}

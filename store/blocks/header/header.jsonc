@@ -1,0 +1,305 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#1-desktop",
+      "flex-layout.row#3-desktop",
+      "flex-layout.row#2-desktop",
+      "sticky-layout#4-desktop"
+    ]
+  },
+
+  "flex-layout.row#1-desktop": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#2-desktop": {
+    "children": ["flex-layout.col#logo-desktop"],
+    "props": {
+      "blockClass": "menu-logo",
+      "fullWidth": "true"
+    }
+  },
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#websites",
+      "flex-layout.col#spacer",
+      "vtex.menu@2.x:menu#institutional"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#4-desktop"]
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#category-menu"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "class": "col-logo"
+    },
+    "children": ["logo#desktop"]
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://mastampa.vteximg.com.br/arquivos/logotipo-mastampa.png",
+      "width": "300"
+    }
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#1-mobile"]
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile"]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": ["menu#drawer"]
+  },
+  "menu#drawer": {
+    "children": [
+      "menu-item#vestuario-mobile",
+      "menu-item#calzado-mobile",
+      "menu-item#accesorios-mobile",
+      "menu-item#nueva-mobile"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "menu-item#vestuario-mobile": {
+    "props": {
+      "id": "menu-item-vestuario",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "VESTUARIO",
+        "text": "VESTUARIO"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#vestuario-mobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu#vestuario-mobile": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-vestuario-mobile"
+    ]
+  },
+  "flex-layout.row#menu-vestuario-mobile": {
+    "children": [
+      "flex-layout.col#menu-vestuario-1-mobile"
+    ]
+  },
+  "flex-layout.col#menu-vestuario-1-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#vestuario-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#vestuario-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#trajedebano",
+      "menu-item#casacasyparkas",
+      "menu-item#vestidosyconjuntos",
+      "menu-item#blusasypoleras",
+      "menu-item#abrigosychaquetones",
+      "menu-item#sweaterychaleco",
+      "menu-item#chaquetayblazer",
+      "menu-item#faldasypantalones"
+    ]
+  },
+
+
+  "menu-item#accesorios-mobile": {
+    "props": {
+      "id": "menu-item-accesorios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "ACCESORIOS",
+        "text": "ACCESORIOS"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#accesorios-mobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu#accesorios-mobile": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-accesorios-mobile"
+    ]
+  },
+  "flex-layout.row#menu-accesorios-mobile": {
+    "children": [
+      "flex-layout.col#menu-accesorios-1-mobile"
+    ]
+  },
+  "flex-layout.col#menu-accesorios-1-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#accesorios-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#accesorios-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#bolsosycarteras",
+      "menu-item#monederosybilleteras",
+      "menu-item#playa",
+      "menu-item#joyeria",
+      "menu-item#complementos",
+      "menu-item#panuelosycapas"
+    ]
+  },
+
+  "menu-item#calzado-mobile": {
+    "props": {
+      "id": "menu-item-calzado",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "CALZADO",
+        "text": "CALZADO"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#calzado-mobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu#calzado-mobile": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-calzado-mobile"
+    ]
+  },
+  "flex-layout.row#menu-calzado-mobile": {
+    "children": [
+      "flex-layout.col#menu-calzado-1-mobile"
+    ]
+  },
+  "flex-layout.col#menu-calzado-1-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#calzado-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#calzado-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+        "menu-item#ballerina",
+        "menu-item#bota",
+        "menu-item#botin",
+        "menu-item#mocasin",
+        "menu-item#sandalia",
+        "menu-item#zapatilla",
+        "menu-item#zapato",
+        "menu-item#zueco"
+    ]
+  },
+
+
+  "menu-item#nueva-mobile": {
+    "props": {
+      "id": "menu-item-nuevacoleccion",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nuevos-productos",
+        "noFollow": true,
+        "tagTitle": "NUEVA COLECCIÓN",
+        "text": "NUEVA COLECCIÓN"
+      }
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://mastampa.vtexassets.com/arquivos/logotipo-mastampa.png",
+      "width": "170"
+    }
+  }
+}

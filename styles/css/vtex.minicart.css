@@ -1,0 +1,34 @@
+.openIconContainer :global(.vtex-button):hover{
+    background: inherit;
+}
+
+.openIconContainer :global(.vtex-button):active{
+    background: inherit;
+}
+
+.minicartCheckoutButton :global(.vtex-button){
+    background: #CF478A;
+    border-radius: 0px;
+    border: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.minicartCheckoutButton :global(.vtex-button){
+    font-size: 0rem;
+}
+
+.minicartCheckoutButton :global(.vtex-button__label)::before{
+    content: 'FINALIZAR COMPRA';
+    font-size: 1rem;
+}
+
+.minicartProductListContainer{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.minicartIconContainer{
+    color: white;
+}
+
+.overlay--visible{
+    background: black;
+}
